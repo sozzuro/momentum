@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owfont-regular.css">
+    <title>Momentum</title>
+</head>
+
+<body>
+
+    <header class="weather">
+        <button class="update-button background__button" type="button">
+            <img class="update-image background__image" src="assets/images/loop_arrow.png" alt="update background">
+        </button>
+        <div class="weather__content">
+            <div class="weather__city" contenteditable="true"></div>
+            <div class="weather__wrap">
+                <i class="weather-icon owf"></i>
+                <div class="weather__temperature"></div>
+            </div>
+            <div class="weather__description"></div>
+            <div class="weather__humidity"></div>
+            <div class="weather__wind"></div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="datetime">
+            <div class="time"></div>
+            <div class="date"></div>
+        </section>
+
+        <section class="greeting">
+            <h1 class="greeting__content">
+                <span class="greeting__text"></span>
+                <span class="greeting__name" contenteditable="true"></span>
+            </h1>
+            <div class="focus">
+                <p class="focus__question">Какая ваша цель сегодня?</p>
+                <p class="focus__answer" contenteditable="true"></p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="quote">
+        <button class="update-button quote__button" type="button">
+            <img class="update-image quote__button_image" src="assets/images/loop_arrow.png" alt="update quote">
+        </button>
+        <div class="quote__content">
+            <figure class="quote__figure">
+                <blockquote class="quote__text"></blockquote>
+                <figcaption class="quote__author"></figcaption>
+            </figure>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

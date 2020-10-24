@@ -1,0 +1,194 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-image 1s ease-in-out;
+}
+
+.weather {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.weather__content {
+  font-size: 1.5rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+}
+
+.weather__city {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
+.weather__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 8rem;
+}
+
+.weather__temperature {
+  font-size: 4rem;
+  margin-left: 0.6rem;
+}
+
+.update-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  transition-duration: 500ms;
+
+}
+
+.update-image {
+  width: 6rem;
+  height: 6rem;
+  background: url("assets/images/loop-arrow.png") no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  transform: scale(1.1);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.datetime {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 51rem;
+}
+
+.date {
+  font-size: 3rem;
+}
+
+.time {
+  font-size: 12rem;
+}
+
+
+.greeting {
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  text-align: center;
+  width: 51rem;
+}
+
+.greeting__content {
+  margin-bottom: 1.5rem;
+}
+
+.greeting__name {
+  display: inline-block;
+}
+
+.focus {
+  font-size: 2rem;
+}
+
+.focus__question {
+  margin-bottom: 0.5rem;
+}
+
+.quote {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.quote__content {
+  font-size: 1.5rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 57rem;
+}
+
+
+.quote__figure figcaption {
+  text-align: right;
+}
+
+.quote__button {
+  margin-right: 1rem;
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+
+  .datetime {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 38rem;
+  }
+
+  .date {
+    font-size: 2rem;
+  }
+
+  .time {
+    font-size: 8rem;
+  }
+
+  .greeting {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    text-align: center;
+    width: 38rem;
+  }
+
+}
